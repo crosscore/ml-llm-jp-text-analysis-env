@@ -15,3 +15,4 @@ spacy
 pymongo
 nlplot
 mecab-python3
+sentencepiece
