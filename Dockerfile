@@ -1,4 +1,7 @@
 # Dockerfile
+ARG SSH_KEY_PATH
+ARG USER_EMAIL
+ARG USER_NAME
 
 # Specify base image
 FROM python:3.11.6
@@ -44,3 +47,4 @@ RUN chmod 600 /root/.ssh/id_rsa
 # Set Git config
 RUN git config --global user.email ${USER_EMAIL}
 RUN git config --global user.name ${USER_NAME}
+RUN git config --global core.autocrlf input
