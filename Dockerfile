@@ -1,3 +1,5 @@
+# Dockerfile
+
 # Specify base image
 FROM python:3.11.6
 
@@ -34,3 +36,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code to the container
 COPY . .
+
+# Copy SSH key
+COPY ${SSH_KEY_PATH} /root/.ssh/id_rsa
+RUN chmod 600 /root/.ssh/id_rsa
+
+# Set Git config
+RUN git config --global user.email ${USER_EMAIL}
+RUN git config --global user.name ${USER_NAME}
