@@ -44,4 +44,4 @@ RUN chmod 600 /root/.ssh/id_rsa
 # Set Git config
 RUN git config --global user.email ${USER_EMAIL}
 RUN git config --global user.name ${USER_NAME}
-RUN git confgi --global core.autocrlf input
+RUN git config --global core.autocrlf input
