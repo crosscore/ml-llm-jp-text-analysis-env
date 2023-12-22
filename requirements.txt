@@ -13,8 +13,8 @@ fugashi
 beautifulsoup4
 lxml
 japanize-matplotlib
-spacy
 pymongo
 nlplot
-mecab-python3
-sentencepiece
+# spacy
+# mecab-python3
+# sentencepiece

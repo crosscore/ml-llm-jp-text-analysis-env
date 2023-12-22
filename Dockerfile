@@ -35,16 +35,12 @@ RUN git config --global user.email "${USER_EMAIL}"
 RUN git config --global user.name "${USER_NAME}"
 RUN git config --global core.autocrlf input
 
-# Install Neologd
-RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
-    && mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -y
-
 # Upgrade pip
 RUN pip install --upgrade pip
 
 # Install Neologd
-RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
-    && mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -y
+# RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
+#     && mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -y
 
 # Install required Python packages
 COPY requirements.txt ./
