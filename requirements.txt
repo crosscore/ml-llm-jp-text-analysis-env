@@ -15,6 +15,7 @@ lxml
 japanize-matplotlib
 pymongo
 nlplot
+
 # spacy
 # mecab-python3
 # sentencepiece
