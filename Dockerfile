@@ -9,7 +9,7 @@ WORKDIR /usr/src/repos
 RUN apt-get update && apt-get install -y git
 
 # Install Japanese fonts
-RUN apt-get install -y fonts-ipafont
+RUN apt-get install -y fonts-noto-cjk
 
 # Upgrade pip
 RUN pip install --upgrade pip
