@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git config --global user.email "@gmail.com"
-git config --global user.name ""
+git config --global user.name "name"
 
 # Set SSH key permissions
 chmod 600 /root/.ssh/id_rsa

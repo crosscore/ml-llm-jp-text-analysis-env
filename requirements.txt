@@ -15,6 +15,7 @@ lxml
 japanize-matplotlib
 pymongo
 nlplot
+sympy
 
 # spacy
 # mecab-python3
